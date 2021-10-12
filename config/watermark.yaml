@@ -1,0 +1,37 @@
+# model
+model: JointMattingParsing
+loss: JointMattingParsingLoss
+backbone: mobilenetv3_large  #wide_resnet50
+phase: end2end
+# solver
+num_epochs: 200
+adj_epochs: 150
+beg_lr: 0.0005
+end_lr: 0.000001
+batch_size: 56
+momentum: 0.9
+weight_decay: 0.0001
+# training
+num_workers: 6
+pin_memory: False
+benchmark: True
+# data-set
+dataset: WaterMark
+num_classes: 2
+root_dataset: /home/knight/Workspace/xhx/dataset/Watermark/set16
+images_path: img
+segment_path: tri
+matting_path: mat
+source_path: src
+crop_width: 512
+crop_height: 128
+train_list: train.set16.v2.txt
+eval_list: eval.txt
+# misc
+note_info: wide_resnet50 with 128x512 with full text (with white background) + concav text
+save_epoch: 50
+save_path: save/watermark/knight-17-mobilenetv3-joint
+backbone_pretrain: #/home/knight/Workspace/xhx/pretrain/mobilenet_v3_large-8738ca79.pth #wide_resnet50_2-95faca4d.pth
+pretrain: /home/knight/Workspace/xhx/joint-human-matting-and-parsing/save/watermark/knight-16-mobilenetv3-joint/segnet-final.pth
+prefix_name: segnet
+device: '1'

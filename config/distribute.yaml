@@ -1,0 +1,3 @@
+init_method: tcp://ip:8798
+rank: 0
+word_size: 2

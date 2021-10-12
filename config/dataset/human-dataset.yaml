@@ -1,0 +1,56 @@
+BaiduHuman:
+  num_classes: 3
+  root_dataset: /home/knight/Workspace/xhx/dataset/HumanSegmentation/BaiduHuman/format
+  images_path: img
+  segment_path: tri
+  matting_path: mat
+  train_list: train.txt
+  eval_list: eval.txt
+#LIP-Portrait:
+#  num_classes: 3
+#  root_dataset: M:/dataset/HumanSegmentation/LIP-Portrait/format
+#  images_path: img
+#  segment_path: tri
+#  matting_path: mat
+#  train_list: train.txt
+#  eval_list: eval.txt
+# PortraitFineSeg:
+#   num_classes: 3
+#   root_dataset: M:/dataset/HumanSegmentation/PortraitFineSeg/format
+#   images_path: img
+#   segment_path: tri
+#   matting_path: mat
+#   train_list: train.txt
+#   eval_list: eval.txt
+# RealWorldPortrait-636:
+#   num_classes: 3
+#   root_dataset: M:/dataset/HumanSegmentation/RealWorldPortrait-636/format
+#   images_path: img
+#   segment_path: tri
+#   matting_path: mat
+#   train_list: train.txt
+#   eval_list: eval.txt
+# SheTu-1-single:
+#   num_classes: 3
+#   root_dataset: M:/dataset/HumanSegmentation/SheTu/1/single/format
+#   images_path: img
+#   segment_path: tri
+#   matting_path: mat
+#   train_list: train.txt
+#   eval_list: eval.txt
+# Supervisely:
+#   num_classes: 3
+#   root_dataset: M:/dataset/HumanSegmentation/Supervisely/format
+#   images_path: img
+#   segment_path: tri
+#   matting_path: mat
+#   train_list: train.txt
+#   eval_list: eval.txt
+# Quman-single:
+#   num_classes: 3
+#   root_dataset: M:/dataset/HumanSegmentation/Quman/single/format
+#   images_path: img
+#   segment_path: tri
+#   matting_path: mat
+#   train_list: train.txt
+#   eval_list: eval.txt
